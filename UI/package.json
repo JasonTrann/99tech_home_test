@@ -1,7 +1,7 @@
 {
   "name": "99tech_assigntment",
   "version": "1.0.0",
-  "description": "Playwright + TypeScript automation framework for https://www.demoblaze.com/ (strict POM)",
+  "description": "Playwright + TypeScript automation framework for hometest for 99 tech",
   "scripts": {
     "test": "playwright test",
     "test:headed": "playwright test --headed",

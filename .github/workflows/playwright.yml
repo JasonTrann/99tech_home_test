@@ -20,10 +20,34 @@ jobs:
         working-directory: UI
         run: npx playwright install --with-deps
 
-      - name: Run tests
+      - name: Run login suite
         working-directory: UI
         env:
           BASE_URL: https://www.demoblaze.com/
           DEFAULT_TIMEOUT: 30000
           SLOW_MO: 0
         run: npx playwright test --project=login --workers=1
+
+      - name: Run add_to_cart suite
+        working-directory: UI
+        env:
+          BASE_URL: https://www.demoblaze.com/
+          DEFAULT_TIMEOUT: 30000
+          SLOW_MO: 0
+        run: npx playwright test --project=add_to_cart --workers=1
+
+      - name: Run firefox
+        working-directory: UI
+        env:
+          BASE_URL: https://www.demoblaze.com/
+          DEFAULT_TIMEOUT: 30000
+          SLOW_MO: 0
+        run: npx playwright test --project=firefox
+
+      - name: Run webkit
+        working-directory: UI
+        env:
+          BASE_URL: https://www.demoblaze.com/
+          DEFAULT_TIMEOUT: 30000
+          SLOW_MO: 0
+        run: npx playwright test --project=webkit

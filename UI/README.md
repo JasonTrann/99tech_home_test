@@ -142,4 +142,6 @@ Reports land in `playwright-report/` (HTML + JSON); screenshots, videos, and tra
 - Add test data for item 's prices.
 - Implement API testcase.
 - Implement NFT testcase.
-
+- Interage report (grafana etc..)
+- Add more test data so can execute paralel to save time, right now only have 1 testdata => cant run paralel.
+- Add Chrome to brower list.
