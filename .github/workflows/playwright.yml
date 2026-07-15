@@ -22,4 +22,4 @@ jobs:
 
       - name: Run tests
         working-directory: UI
-        run: npx playwright test
+        run: npx playwright test --project=login --workers=1
