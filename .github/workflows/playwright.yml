@@ -22,4 +22,8 @@ jobs:
 
       - name: Run tests
         working-directory: UI
+        env:
+          BASE_URL: https://www.demoblaze.com/
+          DEFAULT_TIMEOUT: 30000
+          SLOW_MO: 0
         run: npx playwright test --project=login --workers=1
