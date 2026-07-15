@@ -1,0 +1,14 @@
+{
+    "valid_user_account": {
+        "username": "qa_long_test",
+        "password": "Test@1234"
+    },
+    "not_exit_user_account": {
+        "username": "not_exist_user_999",
+        "password": "Test@1234"
+    },
+    "wrong_pass_user_account": {
+        "username": "qa_long_test",
+        "password": "WrongPass123"
+    }
+}

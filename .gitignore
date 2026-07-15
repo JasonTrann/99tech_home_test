@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Env files (never commit real secrets/config — see .env.example)
+.env
+.env.local
+
+# Playwright artifacts
+playwright-report/
+test-results/
+blob-report/
+playwright/.cache/
+
+# Playwright browser binaries (installed via `npx playwright install`)
+UI/.playwright-browsers/
+
+# Build output
+dist/
+build/
+*.tsbuildinfo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/

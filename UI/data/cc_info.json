@@ -1,0 +1,18 @@
+{
+    "valid_cc_info": {
+        "name": "Long Tran",
+        "country": "Vietnam",
+        "city": "Ho Chi Minh",
+        "card": "201298",
+        "month": "07",
+        "year": "2026"
+    },
+    "non_numeric_card_info": {
+        "name": "Long Tran",
+        "country": "Vietnam",
+        "city": "Ho Chi Minh",
+        "card": "2410ABab",
+        "month": "07",
+        "year": "2026"
+    }
+}

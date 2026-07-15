@@ -1,0 +1,25 @@
+stages:
+  - test
+
+playwright-tests:
+  stage: test
+  image: mcr.microsoft.com/playwright:v1.44.0-jammy
+  variables:
+    BASE_URL: "https://www.demoblaze.com/"
+    DEFAULT_TIMEOUT: "30000"
+    SLOW_MO: "0"
+    CI: "true"
+  before_script:
+    - cd UI
+    - npm ci
+  script:
+    - npx playwright test
+  artifacts:
+    when: always
+    expire_in: 14 days
+    paths:
+      - UI/playwright-report/
+      - UI/test-results/
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
