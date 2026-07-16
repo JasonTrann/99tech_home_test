@@ -42,7 +42,7 @@ Assignment for 99tech (https://www.demoblaze.com/)
 - Follow POM design pattern:
     - Each page only contain possible action/method/locator on that specific page.
     - When there is a change in code, tester only need to edit on that specific page => save time and cost when maintainance.
-    - Data store on seperated folder, using json format
+    - Data store on seperated folder, using json format, easy to use and to edit.
     - Easy to understand and training.
 
 ### Why Playwright
@@ -50,6 +50,10 @@ Assignment for 99tech (https://www.demoblaze.com/)
 - Much faster than traditional Selenium.
 - Suport native pararel execution.
 - Suport built-in auto-waiting.
+
+### Manual Testcases Link
+
+https://docs.google.com/spreadsheets/d/1EuVlpvDucwXD9Egf-VoWRe7_ESfaeENX/edit?usp=drive_link&ouid=117275649962746033628&rtpof=true&sd=true
 
 ## Prerequisites
 
